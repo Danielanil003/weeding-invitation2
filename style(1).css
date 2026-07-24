@@ -1,0 +1,29 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#fff8f8;color:#4b3a3a;overflow-x:hidden}
+section{width:100%;min-height:100vh;padding:80px 8%;position:relative}
+.section-title{text-align:center;margin-bottom:50px}
+.section-title h2{font-family:'Cormorant Garamond',serif;font-size:3rem;color:#b14b73}
+.section-title p{margin-top:10px;color:#7b6d6d}
+#welcome{display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at top,#ffe6ef,#fff8f8 70%)}
+.background-overlay{position:absolute;inset:0;background:radial-gradient(circle,#ffd4e4 0%,transparent 70%);opacity:.45}
+.welcome-wrapper{position:relative;z-index:2;text-align:center}
+.welcome-text h3{font-family:'Cormorant Garamond',serif;color:#9c6680}
+.welcome-text h1{font-family:'Cormorant Garamond',serif;font-size:4rem;color:#b14b73;margin:15px 0}
+.welcome-text span{color:#d7a12b}
+.welcome-text p{max-width:650px;margin:0 auto 40px;line-height:1.8}
+.envelope{width:380px;height:250px;margin:auto;position:relative;border-radius:10px;background:#f3ccd8;box-shadow:0 20px 60px rgba(0,0,0,.18);overflow:hidden}
+.envelope-back{position:absolute;inset:0;background:#f5d8e1}
+.envelope-letter{position:absolute;left:50%;top:25px;transform:translateX(-50%);width:88%;height:190px;background:#fff;border-radius:8px;box-shadow:0 10px 25px rgba(0,0,0,.12);z-index:2}
+.letter-content{padding:20px;text-align:center}
+.letter-content h2,.letter-content h1{font-family:'Cormorant Garamond',serif;color:#b14b73}
+#openInvitation{margin-top:18px;padding:14px 34px;border:none;border-radius:40px;background:linear-gradient(135deg,#e8b3c6,#cb7398);color:#fff;cursor:pointer}
+.envelope-flap{position:absolute;top:0;left:0;width:100%;height:125px;background:#efbfd0;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;z-index:3}
+.countdown-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:25px}
+.time-box,.timeline-card,.event-card,.gallery-item,.venue-content,.rsvp-box{background:#fff;border-radius:18px;padding:25px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.gallery-item{min-height:220px;background:linear-gradient(135deg,#ffe6ef,#fff)}
+.map-box{height:300px;border:2px dashed #d7a2b5;display:flex;justify-content:center;align-items:center;margin:20px 0}
+.map-btn,.rsvp-btn,.scroll-btn{display:inline-block;text-decoration:none;color:#fff;background:#c96f95;padding:14px 28px;border-radius:40px}
+#thankyou{text-align:center}
+@media(max-width:768px){.welcome-text h1,.hero-content h1,#thankyou h1{font-size:2.8rem}.envelope{width:320px;height:220px}.envelope-letter{height:165px}}
